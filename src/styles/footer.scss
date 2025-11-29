@@ -1,0 +1,144 @@
+.footer {
+  background-color: var(--primary-navy);
+  color: var(--white);
+  padding: 1.5rem 2rem 1rem;
+  margin-top: auto;
+  width: 100%;
+
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+    &:last-child {
+      border-right: none;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--white);
+      font-family: "Playfair Display", "Georgia", serif;
+      align-self: flex-start;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 0.4rem;
+      color: rgba(255, 255, 255, 0.9);
+      align-self: flex-start;
+
+      a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: var(--white);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__brand-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__brand-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+
+    img {
+      height: 75px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+    text-align: center;
+
+    p {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0.25rem 0;
+    }
+
+    a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem 1rem;
+
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    &__section {
+      padding: 0;
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 1.5rem;
+
+      &:first-child {
+        padding-bottom: 1.5rem;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+
+    &__brand-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__section {
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
