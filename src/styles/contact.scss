@@ -1,0 +1,254 @@
+.contact {
+  min-height: calc(100vh - 110px);
+  padding: 2rem 2rem 3rem;
+  background-color: var(--background-light);
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-navy);
+    font-family: system-ui, -apple-system, sans-serif;
+    text-align: left;
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-navy-pale);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: var(--primary-navy);
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px var(--shadow);
+    }
+  }
+
+  &__card-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--white);
+
+    &--phone {
+      background-color: var(--primary-navy);
+    }
+
+    &--email {
+      background-color: var(--primary-navy-light);
+    }
+
+    &--location {
+      background-color: var(--primary-navy-dark);
+    }
+  }
+
+  &__card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    font-family: "Playfair Display", "Georgia", serif;
+    margin-bottom: 1rem;
+  }
+
+  &__card-link {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--primary-navy-light);
+      text-decoration: underline;
+    }
+  }
+
+  &__card-description {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+
+  &__location {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px var(--shadow);
+  }
+
+  &__location-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    font-family: "Playfair Display", "Georgia", serif;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  &__location-image {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow);
+  }
+
+  &__location-placeholder {
+    background: linear-gradient(
+      135deg,
+      var(--primary-navy-pale) 0%,
+      var(--white) 100%
+    );
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-navy);
+    font-size: 3rem;
+    gap: 1rem;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__location-info {
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--primary-navy);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--text-dark);
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 968px) {
+    padding: 2rem 1.5rem;
+
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    &__location-placeholder {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem 2rem;
+
+    &__title {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    &__info {
+      gap: 1.5rem;
+    }
+
+    &__card {
+      padding: 1.5rem;
+    }
+
+    &__card-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 1.3rem;
+    }
+
+    &__card-title {
+      font-size: 1.2rem;
+    }
+
+    &__card-link {
+      font-size: 1.1rem;
+    }
+
+    &__card-description {
+      font-size: 0.9rem;
+    }
+
+    &__location {
+      padding: 1.5rem;
+    }
+
+    &__location-title {
+      font-size: 1.3rem;
+    }
+
+    &__location-placeholder {
+      height: 250px;
+      font-size: 2rem;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    &__location-info {
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
