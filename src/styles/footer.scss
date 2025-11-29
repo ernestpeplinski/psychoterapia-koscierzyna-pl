@@ -9,7 +9,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 2rem;
     margin-bottom: 1rem;
   }
@@ -32,6 +32,9 @@
       color: var(--white);
       font-family: "Playfair Display", "Georgia", serif;
       align-self: flex-start;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     p {
@@ -40,6 +43,9 @@
       margin-bottom: 0.4rem;
       color: rgba(255, 255, 255, 0.9);
       align-self: flex-start;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
 
       a {
         color: rgba(255, 255, 255, 0.9);
@@ -51,6 +57,16 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  &__icon {
+    font-size: 1rem;
+    opacity: 0.8;
+
+    &--inline {
+      font-size: 0.85rem;
+      flex-shrink: 0;
     }
   }
 
@@ -73,6 +89,23 @@
       width: auto;
       filter: brightness(0) invert(1);
     }
+  }
+
+  &__partner-link {
+    display: block;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+      transform: translateY(-3px);
+    }
+  }
+
+  &__partner-logo {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    filter: brightness(0) invert(1);
   }
 
   &__bottom {
@@ -114,6 +147,7 @@
       border-right: none;
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       padding-bottom: 1.5rem;
+      align-items: center;
 
       &:first-child {
         padding-bottom: 1.5rem;
@@ -123,22 +157,22 @@
         border-bottom: none;
         padding-bottom: 0;
       }
+
+      h3 {
+        font-size: 1.1rem;
+        align-self: center;
+      }
+
+      p {
+        font-size: 0.9rem;
+        align-self: center;
+      }
     }
 
     &__brand-container {
       flex-direction: column;
       align-items: center;
       text-align: center;
-    }
-
-    &__section {
-      h3 {
-        font-size: 1.1rem;
-      }
-
-      p {
-        font-size: 0.9rem;
-      }
     }
   }
 }

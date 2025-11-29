@@ -1,5 +1,12 @@
 import "../styles/footer.scss";
 import logo from "../assets/Logo 1.png";
+import partnerLogo from "../assets/images/centrum-pomocy-psychologicznej-koscierzyna-logo.png";
+import {
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaPhone,
+  FaHandshake,
+} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -19,7 +26,10 @@ function Footer() {
         </div>
 
         <div className="footer__section">
-          <h3>Adres</h3>
+          <h3>
+            <FaMapMarkerAlt className="footer__icon" />
+            Adres
+          </h3>
           <p>
             <a
               href="https://www.google.com/maps/search/?api=1&query=Kościerzyna+ul.+Mickiewicza+18A+m3"
@@ -34,14 +44,37 @@ function Footer() {
         </div>
 
         <div className="footer__section">
-          <h3>Kontakt</h3>
+          <h3>
+            <FaPhone className="footer__icon" />
+            Kontakt
+          </h3>
           <p>
-            Email:{" "}
+            <FaEnvelope className="footer__icon footer__icon--inline" />
             <a href="mailto:magdamil123@gmail.com">magdamil123@gmail.com</a>
           </p>
           <p>
-            Tel: <a href="tel:+48517383811">517-383-811</a>
+            <FaPhone className="footer__icon footer__icon--inline" />
+            <a href="tel:+48517383811">517-383-811</a>
           </p>
+        </div>
+
+        <div className="footer__section footer__section--partner">
+          <h3>
+            <FaHandshake className="footer__icon" />
+            Partnerzy
+          </h3>
+          <a
+            href="https://psychologkoscierzyna.pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__partner-link"
+          >
+            <img
+              src={partnerLogo}
+              alt="Centrum Pomocy Psychologicznej Kościerzyna"
+              className="footer__partner-logo"
+            />
+          </a>
         </div>
       </div>
 
