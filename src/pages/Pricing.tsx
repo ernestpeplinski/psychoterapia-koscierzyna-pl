@@ -1,4 +1,5 @@
 import "../styles/pricing.scss";
+import { Link } from "react-router-dom";
 
 function Pricing() {
   return (
@@ -56,13 +57,23 @@ function Pricing() {
         </div>
 
         <div className="pricing__info">
-          <h3 className="pricing__info-title">Informacje praktyczne</h3>
+          <h2 className="pricing__info-title">Informacje praktyczne</h2>
           <ul className="pricing__info-list">
-            <li>Sesje odbywają się w gabinecie w Kościerzynie</li>
-            <li>Możliwość umówienia konsultacji telefonicznie</li>
+            <li>
+              Sesje odbywają się w{" "}
+              <Link to="/kontakt">gabinecie w Kościerzynie</Link>
+            </li>
+            <li>
+              Możliwość{" "}
+              <Link to="/kontakt">umówienia konsultacji telefonicznie</Link>
+            </li>
             <li>Płatność gotówką lub przelewem</li>
             <li>
               W przypadku odwołania sesji proszę o kontakt minimum 24h wcześniej
+            </li>
+            <li>
+              Dowiedz się więcej{" "}
+              <Link to="/o-mnie">o moim podejściu terapeutycznym</Link>
             </li>
           </ul>
         </div>

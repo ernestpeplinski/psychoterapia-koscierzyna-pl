@@ -83,6 +83,18 @@
     margin-bottom: 0.5rem;
   }
 
+  &__external-link {
+    color: var(--primary-navy);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--primary-navy-light);
+      text-decoration: underline;
+    }
+  }
+
   &__credentials {
     margin-top: 1.5rem;
     padding: 2rem;

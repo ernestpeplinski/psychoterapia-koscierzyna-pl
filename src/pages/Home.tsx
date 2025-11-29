@@ -89,11 +89,19 @@ function Home() {
             />
           </div>
           <div className="home__about-content">
-            <h2 className="home__section-title">Magdalena Milewczyk</h2>
+            <h3 className="home__about-subtitle">Magdalena Milewczyk</h3>
             <p className="home__about-description">
-              Jestem pedagogiem, psychoterapeutą poznawczo-behawioralnym w
-              trakcie szkolenia. Jestem członkiem Polskiego Towarzystwa Terapii
-              Poznawczej i Behawioralnej im. Zdzisława Bizonia.
+              Jestem pedagogiem oraz certyfikowanym psychoterapeutą
+              poznawczo-behawioralnym. Jestem członkiem{" "}
+              <a
+                href="https://pttpb.pl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="home__external-link"
+              >
+                Polskiego Towarzystwa Terapii Poznawczej i Behawioralnej
+              </a>{" "}
+              im. Zdzisława Bizonia.
             </p>
             <p className="home__about-description">
               W pracy bliskie jest mi podejście terapii skoncentrowanej na

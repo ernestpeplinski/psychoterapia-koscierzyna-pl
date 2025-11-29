@@ -197,6 +197,25 @@
     text-align: justify;
   }
 
+  &__external-link {
+    color: var(--primary-navy);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--primary-navy-light);
+    }
+  }
+
+  &__about-subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Playfair Display", "Georgia", serif;
+    color: var(--primary-navy);
+    margin-bottom: 1rem;
+  }
+
   &__about-button {
     display: inline-block;
     padding: 1rem 2.5rem;

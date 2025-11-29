@@ -60,7 +60,7 @@ function Contact() {
           </div>
 
           <div className="contact__location">
-            <h2 className="contact__location-title">Wejście do gabinetu</h2>
+            <h2 className="contact__location-title">Jak dotrzeć?</h2>
             <div className="contact__location-image">
               <div className="contact__location-placeholder">
                 <FaMapMarkerAlt />
@@ -75,10 +75,14 @@ function Contact() {
               */}
             </div>
             <div className="contact__location-info">
-              <h3>Jak dojechać?</h3>
               <p>
-                Gabinet znajduje się w centrum Kościerzyny przy ulicy
-                Mickiewicza 18A m3.
+                <strong>Gabinet znajduje się w centrum Kościerzyny</strong> przy ulicy
+                Mickiewicza 18A m3. Dogodny dojazd komunikacją miejską oraz możliwość
+                parkowania w pobliżu.
+              </p>
+              <p>
+                W razie pytań dotyczących dojazdu, zapraszam do{" "}
+                <a href="tel:+48517383811">kontaktu telefonicznego</a>.
               </p>
             </div>
           </div>
