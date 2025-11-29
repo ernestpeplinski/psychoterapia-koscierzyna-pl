@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, follow" />
-    <title>Przekierowanie - Psychoterapia Kościerzyna</title>
-    
-    <!-- GitHub Pages SPA Redirect Trick -->
-    <script>
-      // Store the current path in sessionStorage
-      sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
-      // Redirect to the root with the path as a query parameter
-      location.replace('/');
+    <meta charset="utf-8">
+    <title>Psychoterapia Kościerzyna</title>
+    <script type="text/javascript">
+      // 0 for custom domain, 1 for username.github.io/repo-name
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
     </script>
   </head>
   <body>
-    <!-- This content will not be visible as we redirect immediately -->
   </body>
 </html>
