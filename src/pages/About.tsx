@@ -47,7 +47,7 @@ function About() {
               <ul>
                 <li>Pedagog</li>
                 <li>
-                  Psychoterapeuta poznawczo-behawioralny (w trakcie szkolenia)
+                  Ceryfikowany psychoterapeuta poznawczo behawioralny
                 </li>
                 <li>
                   Członek Polskiego Towarzystwa Terapii Poznawczej i
