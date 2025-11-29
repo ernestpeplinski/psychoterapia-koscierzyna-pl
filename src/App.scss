@@ -1,3 +1,18 @@
+body {
+  margin: 0;
+  padding-top: 110px; // Compensation for fixed header
+
+  @media (max-width: 768px) {
+    padding-top: 140px; // More space for mobile header
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   text-align: center;
 

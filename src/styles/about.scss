@@ -1,0 +1,194 @@
+.about {
+  min-height: calc(100vh - 110px);
+  padding: 1rem 2rem 2.5rem;
+  background-color: var(--white);
+  overflow-x: hidden;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-navy);
+    font-family: system-ui, -apple-system, sans-serif;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-navy-pale);
+    position: relative;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: var(--primary-navy);
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow);
+    background-color: var(--primary-navy-pale);
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    font-family: "Playfair Display", "Georgia", serif;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    text-align: justify;
+    margin-bottom: 0.5rem;
+  }
+
+  &__credentials {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background-color: var(--primary-navy-pale);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-navy);
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--primary-navy);
+      margin-bottom: 1rem;
+      font-family: "Playfair Display", "Georgia", serif;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: var(--text-dark);
+        padding-left: 1.5rem;
+        position: relative;
+        margin-bottom: 0.75rem;
+
+        &::before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          color: var(--primary-navy);
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 968px) {
+    padding: 3rem 1.5rem;
+
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    &__image-wrapper {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__subtitle {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    &__description {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem 2rem;
+
+    &__container {
+      padding-top: 0.5rem;
+    }
+
+    &__title {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      margin-top: 0.5rem;
+      text-align: left;
+      white-space: normal;
+      overflow: visible;
+      display: block;
+    }
+
+    &__content {
+      gap: 2rem;
+    }
+
+    &__subtitle {
+      font-size: 1.4rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+    }
+
+    &__credentials {
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      ul li {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

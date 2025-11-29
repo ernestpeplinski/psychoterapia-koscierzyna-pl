@@ -1,13 +1,26 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
-import logo from "./assets/Logo 1.png";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Pricing from "./pages/Pricing";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <div className="container">
-      <img src={logo} alt="Logo Psychoterapia Kościerzyna" className="logo" />
-      <h1>Psychoterapia Kościerzyna</h1>
-      <p>Strona w budowie, będzie dostępna wkrótce</p>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/o-mnie" element={<About />} />
+        <Route path="/cennik" element={<Pricing />} />
+        <Route path="/kontakt" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
