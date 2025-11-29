@@ -1,0 +1,449 @@
+.home {
+  min-height: calc(100vh - 110px);
+
+  // Hero Section
+  &__hero {
+    background: linear-gradient(
+      135deg,
+      var(--primary-navy) 0%,
+      var(--primary-navy-light) 100%
+    );
+    color: var(--white);
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  &__hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Playfair Display", "Georgia", serif;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  &__hero-highlight {
+    color: var(--primary-navy-pale);
+  }
+
+  &__hero-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+  }
+
+  &__hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__hero-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    &--primary {
+      background-color: var(--white);
+      color: var(--primary-navy);
+
+      &:hover {
+        background-color: var(--primary-navy-pale);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &--secondary {
+      background-color: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  // Services Section
+  &__services {
+    padding: 5rem 2rem;
+    background-color: var(--background-light);
+  }
+
+  &__services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "Playfair Display", "Georgia", serif;
+    color: var(--primary-navy);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+  }
+
+  &__service-card {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 30px var(--shadow);
+    }
+  }
+
+  &__service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      135deg,
+      var(--primary-navy) 0%,
+      var(--primary-navy-light) 100%
+    );
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: var(--white);
+  }
+
+  &__service-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Playfair Display", "Georgia", serif;
+    color: var(--primary-navy);
+    margin-bottom: 1rem;
+  }
+
+  &__service-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+  }
+
+  // About Preview Section
+  &__about {
+    padding: 5rem 2rem;
+    background-color: var(--white);
+  }
+
+  &__about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  &__about-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px var(--shadow);
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__about-content {
+    .home__section-title {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__about-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+
+  &__about-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--primary-navy);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--shadow);
+
+    &:hover {
+      background-color: var(--primary-navy-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px var(--shadow);
+    }
+  }
+
+  // CTA Section
+  &__cta {
+    padding: 5rem 2rem;
+    background: linear-gradient(
+      135deg,
+      var(--primary-navy-dark) 0%,
+      var(--primary-navy) 100%
+    );
+    color: var(--white);
+    text-align: center;
+  }
+
+  &__cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "Playfair Display", "Georgia", serif;
+    margin-bottom: 1.5rem;
+  }
+
+  &__cta-description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+  }
+
+  &__cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    &--primary {
+      background-color: var(--white);
+      color: var(--primary-navy);
+
+      &:hover {
+        background-color: var(--primary-navy-pale);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &--secondary {
+      background-color: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  // Responsive Design
+  @media (max-width: 968px) {
+    &__hero {
+      padding: 4rem 1.5rem;
+    }
+
+    &__hero-title {
+      font-size: 2.2rem;
+    }
+
+    &__hero-subtitle {
+      font-size: 1.1rem;
+    }
+
+    &__services {
+      padding: 4rem 1.5rem;
+    }
+
+    &__section-title {
+      font-size: 2rem;
+    }
+
+    &__services-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    &__about {
+      padding: 4rem 1.5rem;
+    }
+
+    &__about-container {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    &__about-image {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    &__about-content {
+      .home__section-title {
+        text-align: center;
+      }
+    }
+
+    &__about-description {
+      text-align: left;
+    }
+
+    &__cta {
+      padding: 4rem 1.5rem;
+    }
+
+    &__cta-title {
+      font-size: 2rem;
+    }
+
+    &__cta-description {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__hero {
+      padding: 3rem 1rem;
+    }
+
+    &__hero-title {
+      font-size: 1.8rem;
+    }
+
+    &__hero-subtitle {
+      font-size: 1rem;
+    }
+
+    &__hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__hero-button {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+      padding: 0.875rem 2rem;
+      font-size: 1rem;
+    }
+
+    &__services {
+      padding: 3rem 1rem;
+    }
+
+    &__section-title {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+
+    &__service-icon {
+      width: 70px;
+      height: 70px;
+      font-size: 2rem;
+    }
+
+    &__service-title {
+      font-size: 1.3rem;
+    }
+
+    &__service-description {
+      font-size: 0.95rem;
+    }
+
+    &__about {
+      padding: 3rem 1rem;
+    }
+
+    &__about-container {
+      gap: 2rem;
+    }
+
+    &__about-description {
+      font-size: 1rem;
+    }
+
+    &__about-button {
+      width: 100%;
+      text-align: center;
+      padding: 0.875rem 2rem;
+      font-size: 1rem;
+    }
+
+    &__cta {
+      padding: 3rem 1rem;
+    }
+
+    &__cta-title {
+      font-size: 1.6rem;
+    }
+
+    &__cta-description {
+      font-size: 1rem;
+    }
+
+    &__cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__cta-button {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+      padding: 0.875rem 2rem;
+      font-size: 1rem;
+    }
+  }
+}
