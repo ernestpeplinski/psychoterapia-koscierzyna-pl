@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Przekierowanie...</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      (function () {
+        var staticExts = [
+          ".css", ".js", ".mjs", ".json",
+          ".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".ico",
+          ".woff", ".woff2", ".ttf", ".eot",
+          ".mp3", ".mp4", ".webm"
+        ];
+
+        var path = window.location.pathname || "/";
+        var lower = path.toLowerCase();
+
+        for (var i = 0; i < staticExts.length; i++) {
+          if (lower.endsWith(staticExts[i])) {
+            return;
+          }
+        }
+
+        var search = window.location.search || "";
+        var hash = window.location.hash || "";
+        var target = "/index.html?p=" + encodeURIComponent(path + search + hash);
+
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    Przekierowanie...
+  </body>
+</html>
