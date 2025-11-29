@@ -12,7 +12,8 @@ function Header() {
         <div className="header__brand">
           <h1 className="header__title">Psychoterapia Kościerzyna</h1>
           <p className="header__subtitle">
-            Psychoterapia i wsparcie Magdalena Milewczyk
+            Psychoterapia i wsparcie <br />
+            Magdalena Milewczyk
           </p>
         </div>
       </div>

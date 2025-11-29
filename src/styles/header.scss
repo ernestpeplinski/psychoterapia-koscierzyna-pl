@@ -51,6 +51,14 @@
     margin: 0;
     color: var(--text-light);
     font-family: system-ui, -apple-system, sans-serif;
+
+    br {
+      display: none;
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
   }
 
   &__nav {
