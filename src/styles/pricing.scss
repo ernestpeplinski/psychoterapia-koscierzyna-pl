@@ -1,0 +1,218 @@
+.pricing {
+  min-height: calc(100vh - 110px);
+  padding: 2rem 2rem 3rem;
+  background-color: var(--background-light);
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-navy);
+    font-family: system-ui, -apple-system, sans-serif;
+    text-align: left;
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-navy-pale);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: var(--primary-navy);
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px var(--shadow);
+    }
+
+    &--featured {
+      border-color: var(--primary-navy);
+      position: relative;
+
+      &::before {
+        content: "Polecane";
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--primary-navy);
+        color: var(--white);
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+    }
+
+    &--custom {
+      background: linear-gradient(
+        135deg,
+        var(--primary-navy-pale) 0%,
+        var(--white) 100%
+      );
+    }
+  }
+
+  &__card-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--primary-navy-pale);
+  }
+
+  &__card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    font-family: "Playfair Display", "Georgia", serif;
+    margin-bottom: 1rem;
+  }
+
+  &__card-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__card-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-navy);
+    line-height: 1;
+  }
+
+  &__card-duration {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 500;
+  }
+
+  &__card-body {
+    text-align: center;
+  }
+
+  &__card-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+  }
+
+  &__info {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px var(--shadow);
+    border-left: 4px solid var(--primary-navy);
+  }
+
+  &__info-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    font-family: "Playfair Display", "Georgia", serif;
+    margin-bottom: 1.5rem;
+  }
+
+  &__info-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text-dark);
+      padding-left: 2rem;
+      position: relative;
+      margin-bottom: 0.75rem;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--primary-navy);
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 968px) {
+    padding: 2rem 1.5rem;
+
+    &__cards {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem 2rem;
+
+    &__title {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    &__card {
+      padding: 1.5rem;
+    }
+
+    &__card-title {
+      font-size: 1.3rem;
+    }
+
+    &__card-amount {
+      font-size: 2rem;
+    }
+
+    &__card-duration {
+      font-size: 1rem;
+    }
+
+    &__card-description {
+      font-size: 0.95rem;
+    }
+
+    &__info {
+      padding: 1.5rem;
+    }
+
+    &__info-title {
+      font-size: 1.2rem;
+    }
+
+    &__info-list li {
+      font-size: 0.95rem;
+    }
+  }
+}
