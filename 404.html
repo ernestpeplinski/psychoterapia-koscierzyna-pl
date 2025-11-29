@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Psychoterapia Kościerzyna</title>
+    <meta name="robots" content="noindex, follow" />
+    <title>Przekierowanie - Psychoterapia Kościerzyna</title>
+    
+    <!-- GitHub Pages SPA Redirect Trick -->
+    <script>
+      // Store the current path in sessionStorage
+      sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+      // Redirect to the root with the path as a query parameter
+      location.replace('/');
+    </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- This content will not be visible as we redirect immediately -->
   </body>
 </html>
