@@ -100,28 +100,18 @@ function Home() {
             />
           </div>
           <div className="home__about-content">
-            <h3 className="home__about-subtitle">Magdalena Milewczyk</h3>
+            <h3 className="home__about-subtitle">Witaj, jestem Magda.</h3>
             <p className="home__about-description">
-              Jestem pedagogiem oraz certyfikowanym psychoterapeutą
-              poznawczo-behawioralnym. Jestem członkiem{" "}
-              <a
-                href="https://pttpb.pl"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="home__external-link"
-              >
-                Polskiego Towarzystwa Terapii Poznawczej i Behawioralnej
-              </a>{" "}
-              im. Zdzisława Bizonia.
+              Towarzyszę osobom, które czują się przeciążone, zagubione lub stoją w ważnym momencie zmiany. Wierzę, że kiedy tworzymy bezpieczną przestrzeń do rozmowy i refleksji, łatwiej odzyskać poczucie wpływu, równowagi i lepszego kontaktu ze sobą.
             </p>
             <p className="home__about-description">
-              W pracy bliskie jest mi podejście terapii skoncentrowanej na
-              rozwiązaniach, systemowej terapii rodzin oraz dialogu
-              motywującego. Od 13 lat zawodowo zajmuję się wspieraniem osób
-              znajdujących się w kryzysie psychicznym.
+              Lubię myśleć o terapii jako o spotkaniu — spokojnym, uważnym i opartym na zaufaniu.
+            </p>
+            <p className="home__about-description">
+              Jeśli czujesz, że to może być dobre miejsce na rozmowę — zapraszam Cię, by zajrzeć dalej.
             </p>
             <Link to="/o-mnie" className="home__about-button">
-              Dowiedz się więcej
+              Zajrzyj dalej
             </Link>
           </div>
         </div>
