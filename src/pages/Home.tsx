@@ -6,18 +6,30 @@ import profileImage from "../assets/images/magdalena-milewczyk.jpeg";
 function Home() {
   return (
     <div className="home">
+      <section className="home__lead-quote">
+        <div className="home__lead-quote-content">
+          <blockquote className="home__lead-quote-block" aria-label="Cytat">
+            <p>
+              „Możemy nie być odpowiedzialni za świat, który stworzył nasze umysły,
+              <br />
+              ale możemy wziąć odpowiedzialność za umysł, którym tworzymy nasz świat”.
+            </p>
+            <footer>— <cite>Gabor Maté</cite></footer>
+          </blockquote>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="home__hero">
         <div className="home__hero-content">
           <h1 className="home__hero-title">
-            Profesjonalna psychoterapia
-            <br />
             <span className="home__hero-highlight">w sercu Kościerzyny</span>
           </h1>
           <p className="home__hero-subtitle">
             Wspieram osoby w kryzysie psychicznym, pomagam odnaleźć równowagę i
             nowe możliwości rozwoju
           </p>
+
           <div className="home__hero-buttons">
             <Link
               to="/kontakt"
