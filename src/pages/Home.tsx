@@ -23,11 +23,10 @@ function Home() {
       <section className="home__hero">
         <div className="home__hero-content">
           <h1 className="home__hero-title">
-            <span className="home__hero-highlight">w sercu Kościerzyny</span>
+            <span className="home__hero-highlight">Witaj, jestem Magda.</span>
           </h1>
           <p className="home__hero-subtitle">
-            Wspieram osoby w kryzysie psychicznym, pomagam odnaleźć równowagę i
-            nowe możliwości rozwoju
+            Towarzyszę osobom, które chcą lepiej rozumieć swoje myśli, emocje i reakcje w obliczu trudnych doświadczeń.
           </p>
 
           <div className="home__hero-buttons">
