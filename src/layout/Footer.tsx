@@ -1,5 +1,5 @@
 import "../styles/footer.scss";
-import logo from "../assets/Logo MM 3.png";
+import logo from "../assets/LOGO MM 3.png";
 import partnerLogo from "../assets/images/centrum-pomocy-psychologicznej-koscierzyna-logo.png";
 import {
   FaMapMarkerAlt,
