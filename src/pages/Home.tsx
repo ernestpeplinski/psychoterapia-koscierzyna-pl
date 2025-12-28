@@ -56,12 +56,19 @@ function Home() {
               <div className="home__service-icon">
                 <FaHeart />
               </div>
-              <h3 className="home__service-title">
-                Psychoterapia indywidualna
-              </h3>
+              <h3 className="home__service-title">Psychoterapia indywidualna</h3>
               <p className="home__service-description">
-                Terapia poznawczo-behawioralna dla osób dorosłych. Wsparcie w
-                trudnych momentach życia, pracy nad sobą i rozwojem osobistym.
+                Dla osób dorosłych i młodzieży pow. 13 r.ż. Terapia zaburzeń nastroju, lękowych, obsesyjno – kompulsyjnych i innych problemów.
+              </p>
+            </div>
+
+            <div className="home__service-card">
+              <div className="home__service-icon">
+                <FaComments />
+              </div>
+              <h3 className="home__service-title">Wsparcie psychologiczne</h3>
+              <p className="home__service-description">
+                Dla osób w trudnych momentach życia, pracy nad sobą i rozwojem osobistym.
               </p>
             </div>
 
@@ -69,10 +76,9 @@ function Home() {
               <div className="home__service-icon">
                 <FaUsers />
               </div>
-              <h3 className="home__service-title">Interwencja kryzysowa</h3>
+              <h3 className="home__service-title">Interwencja Kryzysowa</h3>
               <p className="home__service-description">
-                Pomoc osobom znajdującym się w kryzysie psychicznym. Ponad 13
-                lat doświadczenia w Punkcie Interwencji Kryzysowej.
+                Pomoc osobom znajdującym się w kryzysie psychicznym spowodowanymi nagłymi zdarzeniami.
               </p>
             </div>
 
@@ -82,8 +88,7 @@ function Home() {
               </div>
               <h3 className="home__service-title">Warsztaty i konsultacje</h3>
               <p className="home__service-description">
-                Warsztaty profilaktyczne dla młodzieży oraz warsztaty dla
-                rodziców podnoszące kompetencje wychowawcze.
+                Warsztaty profilaktyczne dla młodzieży, warsztaty dla rodziców podnoszące kompetencje wychowawcze, „Szkoła dla Rodziców”, warsztaty i konsultacje dla specjalistów i grup zawodowych zajmujących się pomaganiem.
               </p>
             </div>
           </div>
