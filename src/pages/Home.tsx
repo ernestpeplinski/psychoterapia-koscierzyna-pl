@@ -6,18 +6,29 @@ import profileImage from "../assets/images/magdalena-milewczyk.jpeg";
 function Home() {
   return (
     <div className="home">
+      <section className="home__lead-quote">
+        <div className="home__lead-quote-content">
+          <blockquote className="home__lead-quote-block" aria-label="Cytat">
+            <p>
+              „Możemy nie być odpowiedzialni za świat, który stworzył nasze umysły,
+              <br />
+              ale możemy wziąć odpowiedzialność za umysł, którym tworzymy nasz świat”.
+            </p>
+            <footer>— <cite>Gabor Maté</cite></footer>
+          </blockquote>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="home__hero">
         <div className="home__hero-content">
           <h1 className="home__hero-title">
-            Profesjonalna psychoterapia
-            <br />
-            <span className="home__hero-highlight">w sercu Kościerzyny</span>
+            <span className="home__hero-highlight">Witaj, jestem Magda.</span>
           </h1>
           <p className="home__hero-subtitle">
-            Wspieram osoby w kryzysie psychicznym, pomagam odnaleźć równowagę i
-            nowe możliwości rozwoju
+            Towarzyszę osobom, które chcą lepiej rozumieć swoje myśli, emocje i reakcje w obliczu trudnych doświadczeń.
           </p>
+
           <div className="home__hero-buttons">
             <Link
               to="/kontakt"
@@ -45,12 +56,19 @@ function Home() {
               <div className="home__service-icon">
                 <FaHeart />
               </div>
-              <h3 className="home__service-title">
-                Psychoterapia indywidualna
-              </h3>
+              <h3 className="home__service-title">Psychoterapia indywidualna</h3>
               <p className="home__service-description">
-                Terapia poznawczo-behawioralna dla osób dorosłych. Wsparcie w
-                trudnych momentach życia, pracy nad sobą i rozwojem osobistym.
+                Dla osób dorosłych i młodzieży pow. 13 r.ż. Terapia zaburzeń nastroju, lękowych, obsesyjno – kompulsyjnych i innych problemów.
+              </p>
+            </div>
+
+            <div className="home__service-card">
+              <div className="home__service-icon">
+                <FaComments />
+              </div>
+              <h3 className="home__service-title">Wsparcie psychologiczne</h3>
+              <p className="home__service-description">
+                Dla osób w trudnych momentach życia, pracy nad sobą i rozwojem osobistym.
               </p>
             </div>
 
@@ -58,10 +76,9 @@ function Home() {
               <div className="home__service-icon">
                 <FaUsers />
               </div>
-              <h3 className="home__service-title">Interwencja kryzysowa</h3>
+              <h3 className="home__service-title">Interwencja Kryzysowa</h3>
               <p className="home__service-description">
-                Pomoc osobom znajdującym się w kryzysie psychicznym. Ponad 13
-                lat doświadczenia w Punkcie Interwencji Kryzysowej.
+                Pomoc osobom znajdującym się w kryzysie psychicznym spowodowanymi nagłymi zdarzeniami.
               </p>
             </div>
 
@@ -71,8 +88,7 @@ function Home() {
               </div>
               <h3 className="home__service-title">Warsztaty i konsultacje</h3>
               <p className="home__service-description">
-                Warsztaty profilaktyczne dla młodzieży oraz warsztaty dla
-                rodziców podnoszące kompetencje wychowawcze.
+                Warsztaty profilaktyczne dla młodzieży, warsztaty dla rodziców podnoszące kompetencje wychowawcze, „Szkoła dla Rodziców”, warsztaty i konsultacje dla specjalistów i grup zawodowych zajmujących się pomaganiem.
               </p>
             </div>
           </div>
@@ -89,28 +105,18 @@ function Home() {
             />
           </div>
           <div className="home__about-content">
-            <h3 className="home__about-subtitle">Magdalena Milewczyk</h3>
+            <h3 className="home__about-subtitle">Witaj, jestem Magda.</h3>
             <p className="home__about-description">
-              Jestem pedagogiem oraz certyfikowanym psychoterapeutą
-              poznawczo-behawioralnym. Jestem członkiem{" "}
-              <a
-                href="https://pttpb.pl"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="home__external-link"
-              >
-                Polskiego Towarzystwa Terapii Poznawczej i Behawioralnej
-              </a>{" "}
-              im. Zdzisława Bizonia.
+              Towarzyszę osobom, które czują się przeciążone, zagubione lub stoją w ważnym momencie zmiany. Wierzę, że kiedy tworzymy bezpieczną przestrzeń do rozmowy i refleksji, łatwiej odzyskać poczucie wpływu, równowagi i lepszego kontaktu ze sobą.
             </p>
             <p className="home__about-description">
-              W pracy bliskie jest mi podejście terapii skoncentrowanej na
-              rozwiązaniach, systemowej terapii rodzin oraz dialogu
-              motywującego. Od 13 lat zawodowo zajmuję się wspieraniem osób
-              znajdujących się w kryzysie psychicznym.
+              Lubię myśleć o terapii jako o spotkaniu — spokojnym, uważnym i opartym na zaufaniu.
+            </p>
+            <p className="home__about-description">
+              Jeśli czujesz, że to może być dobre miejsce na rozmowę — zapraszam Cię, by zajrzeć dalej.
             </p>
             <Link to="/o-mnie" className="home__about-button">
-              Dowiedz się więcej
+              Zajrzyj dalej
             </Link>
           </div>
         </div>

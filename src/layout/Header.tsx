@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "../styles/header.scss";
-import logo from "../assets/Logo 1.png";
+import logo from "../assets/Logo MM 3.png";
 
 function Header() {
   return (
@@ -10,11 +10,7 @@ function Header() {
           <img src={logo} alt="Logo" />
         </div>
         <div className="header__brand">
-          <h1 className="header__title">Psychoterapia Kościerzyna</h1>
-          <p className="header__subtitle">
-            Psychoterapia i wsparcie <br />
-            Magdalena Milewczyk
-          </p>
+          <h1 className="header__title">Psychoterapia i wsparcie Magdalena Milewczyk</h1>
         </div>
       </div>
       <nav className="header__nav">

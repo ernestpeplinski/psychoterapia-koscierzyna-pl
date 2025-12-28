@@ -61,7 +61,8 @@ function Pricing() {
           <ul className="pricing__info-list">
             <li>
               Sesje odbywają się w{" "}
-              <Link to="/kontakt">gabinecie w Kościerzynie</Link>
+              <Link to="/kontakt">gabinecie w Kościerzynie</Link>{" "}
+              lub online po wcześniejszych ustaleniach
             </li>
             <li>
               Możliwość{" "}
