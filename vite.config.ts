@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { copyFileSync } from 'fs'
+import { copyFileSync, existsSync } from 'fs'
 import { resolve } from 'path'
 
 // https://vite.dev/config/
@@ -10,16 +10,23 @@ export default defineConfig({
     {
       name: 'copy-files',
       closeBundle() {
-        // Copy 404.html to dist folder
-        copyFileSync(
-          resolve(__dirname, '404.html'),
-          resolve(__dirname, 'dist/404.html')
-        )
-        // Copy .nojekyll to dist folder
-        copyFileSync(
-          resolve(__dirname, '.nojekyll'),
-          resolve(__dirname, 'dist/.nojekyll')
-        )
+        const filesToCopy = [
+          { src: resolve(__dirname, '404.html'), dest: resolve(__dirname, 'dist/404.html') },
+          { src: resolve(__dirname, '.nojekyll'), dest: resolve(__dirname, 'dist/.nojekyll') }
+        ]
+
+        filesToCopy.forEach(({ src, dest }) => {
+          if (existsSync(src)) {
+            try {
+              copyFileSync(src, dest)
+              console.log(`[copy-files] copied ${src} -> ${dest}`)
+            } catch (err) {
+              console.warn(`[copy-files] failed to copy ${src}:`, err)
+            }
+          } else {
+            console.warn(`[copy-files] source file not found: ${src}, skipping.`)
+          }
+        })
       }
     }
   ],
