@@ -366,19 +366,26 @@
 
   // CTA Section
   &__cta {
-    padding: 5rem 2rem;
-    background: linear-gradient(
-      135deg,
-      var(--primary-navy-dark) 0%,
-      var(--primary-navy) 100%
-    );
+    padding: 6rem 2rem;
+    background-image: url('../assets/images/bg_akwarela.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: var(--white);
     text-align: center;
+    position: relative;
+    min-height: 60vh;
   }
 
   &__cta-container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 3rem 2.5rem;
+    background: rgba(6, 29, 41, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   &__cta-title {
@@ -386,6 +393,7 @@
     font-weight: 700;
     font-family: "Playfair Display", "Georgia", serif;
     margin-bottom: 1.5rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   }
 
   &__cta-description {
@@ -393,6 +401,7 @@
     line-height: 1.8;
     margin-bottom: 2.5rem;
     opacity: 0.95;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   }
 
   &__cta-buttons {
