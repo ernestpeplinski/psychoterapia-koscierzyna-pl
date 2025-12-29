@@ -3,7 +3,7 @@
 
   // Hero Section
   &__hero {
-    background-image: url('../assets/images/bg_akwarela.jpg');
+    background-image: url('../assets/images/bg_akwarela.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@
 
   &__lead-quote {
     padding: 4rem 1.5rem;
-    background-image: linear-gradient(180deg, rgba(6, 29, 41, 0.75), rgba(6, 29, 41, 0.55)), url('../assets/images/bg_akwarela.jpg');
+    background-image: linear-gradient(180deg, rgba(6, 29, 41, 0.75), rgba(6, 29, 41, 0.55)), url('../assets/images/bg_akwarela.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -367,7 +367,7 @@
   // CTA Section
   &__cta {
     padding: 6rem 2rem;
-    background-image: url('../assets/images/bg_akwarela.jpg');
+    background-image: url('../assets/images/bg_akwarela.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
