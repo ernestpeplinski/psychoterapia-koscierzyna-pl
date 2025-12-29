@@ -1,9 +1,13 @@
 .footer {
-  background-color: var(--primary-navy);
+  background-image: linear-gradient(180deg, rgba(6, 29, 41, 0.92), rgba(6, 29, 41, 0.95)), url('../assets/images/bg_akwarela.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: var(--white);
   padding: 1.5rem 2rem 1rem;
   margin-top: auto;
   width: 100%;
+  position: relative;
 
   &__content {
     max-width: 1200px;

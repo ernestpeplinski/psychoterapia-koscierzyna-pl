@@ -6,7 +6,8 @@ import profileImage from "../assets/images/magdalena-milewczyk.jpeg";
 function Home() {
   return (
     <div className="home">
-      <section className="home__lead-quote">
+      {/* Hero Section with Quote */}
+      <section className="home__hero">
         <div className="home__lead-quote-content">
           <blockquote className="home__lead-quote-block" aria-label="Cytat">
             <p>
@@ -17,10 +18,6 @@ function Home() {
             <footer>— <cite>Gabor Maté</cite></footer>
           </blockquote>
         </div>
-      </section>
-
-      {/* Hero Section */}
-      <section className="home__hero">
         <div className="home__hero-content">
           <h1 className="home__hero-title">
             <span className="home__hero-highlight">Witaj, jestem Magda.</span>
