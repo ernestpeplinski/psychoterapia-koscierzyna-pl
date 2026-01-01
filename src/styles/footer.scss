@@ -76,13 +76,21 @@
 
   &__brand-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0;
+    text-align: center;
+
+    h3 {
+      align-self: center;
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__brand-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   &__logo {
