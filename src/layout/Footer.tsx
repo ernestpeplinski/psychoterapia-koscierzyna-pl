@@ -1,5 +1,5 @@
 import "../styles/footer.scss";
-import logo from "../assets/LOGO MM 3.png";
+import logo from "../assets/Logo MM.png";
 import partnerLogo from "../assets/images/centrum-pomocy-psychologicznej-koscierzyna-logo.png";
 import {
   FaMapMarkerAlt,
@@ -14,11 +14,11 @@ function Footer() {
       <div className="footer__content">
         <div className="footer__section">
           <div className="footer__brand-container">
+            <h3>Psychoterapia Kościerzyna</h3>
             <div className="footer__logo">
               <img src={logo} alt="Logo" />
             </div>
             <div className="footer__brand-text">
-              <h3>Psychoterapia Kościerzyna</h3>
               <p>Magdalena Milewczyk</p>
               <p>Psychoterapia i wsparcie</p>
             </div>
