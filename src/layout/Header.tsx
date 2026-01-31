@@ -7,10 +7,7 @@ function Header() {
     <header className="header">
       <div className="header__left">
         <div className="header__logo">
-          <img src={logo} alt="Logo" />
-        </div>
-        <div className="header__brand">
-          <h1 className="header__title">Psychoterapia i wsparcie Magdalena Milewczyk</h1>
+          <img src={logo} alt="Psychoterapia i wsparcie Magdalena Milewczyk" />
         </div>
       </div>
       <nav className="header__nav">
