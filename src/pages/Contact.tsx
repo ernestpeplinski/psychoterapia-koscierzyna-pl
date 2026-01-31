@@ -18,7 +18,7 @@ function Contact() {
                 517-383-811
               </a>
               <p className="contact__card-description">
-                Zadzwoń, aby umówić wizytę lub uzyskać więcej informacji
+                Jeśli chcesz się umówić na wizytę możesz zadzwonić na poniższy numer. Jeśli pojawia się trudność w nawiązaniu kontaktu proszę o sms – oddzwonię gdy będzie to możliwe.
               </p>
             </div>
 
