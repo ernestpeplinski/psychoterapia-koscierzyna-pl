@@ -1,5 +1,7 @@
 import "../styles/contact.scss";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import buildingImage from "../assets/images/building.webp";
+import entranceImage from "../assets/images/entrance_photo.webp";
 
 function Contact() {
   return (
@@ -61,18 +63,21 @@ function Contact() {
 
           <div className="contact__location">
             <h2 className="contact__location-title">Jak dotrzeć?</h2>
-            <div className="contact__location-image">
-              <div className="contact__location-placeholder">
-                <FaMapMarkerAlt />
-                <p>Zdjęcie wejścia</p>
+            <div className="contact__location-images">
+              <div className="contact__location-image">
+                <img
+                  src={entranceImage}
+                  alt="Wejście do gabinetu - Mickiewicza 18A m3, Kościerzyna"
+                  className="contact__image"
+                />
               </div>
-              {/* Uncomment when image is available:
-              <img
-                src={entranceImage}
-                alt="Wejście do gabinetu - Mickiewicza 18A m3, Kościerzyna"
-                className="contact__image"
-              />
-              */}
+              <div className="contact__location-image">
+                <img
+                  src={buildingImage}
+                  alt="Budynek - Mickiewicza 18A m3, Kościerzyna"
+                  className="contact__image"
+                />
+              </div>
             </div>
             <div className="contact__location-info">
               <p>
