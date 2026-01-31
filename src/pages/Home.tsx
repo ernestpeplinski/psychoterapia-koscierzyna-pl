@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/home.scss";
 import { FaHeart, FaUsers, FaComments, FaPhone } from "react-icons/fa";
-import profileImage from "../assets/images/magdalena-milewczyk.jpeg";
+import profileImage from "../assets/images/magdalena-milewczyk-profile.webp";
 
 function Home() {
   return (
@@ -108,10 +108,10 @@ function Home() {
           <div className="home__about-content">
             <h3 className="home__about-subtitle">Witaj, jestem Magda.</h3>
             <p className="home__about-description">
-              Towarzyszę osobom, które czują się przeciążone, zagubione lub stoją w ważnym momencie zmiany. Wierzę, że kiedy tworzymy bezpieczną przestrzeń do rozmowy i refleksji, łatwiej odzyskać poczucie wpływu, równowagi i lepszego kontaktu ze sobą.
+              Jestem pedagogiem i certyfikowanym psychoterapeutą poznawczo – behawioralnym. Towarzyszę osobom, które czują się przeciążone, zagubione lub stoją w ważnym momencie zmiany. Wierzę, że kiedy tworzymy bezpieczną przestrzeń do rozmowy i refleksji, łatwiej odzyskać poczucie wpływu, równowagi i lepszego kontaktu ze sobą.
             </p>
             <p className="home__about-description">
-              Lubię myśleć o terapii jako o spotkaniu — spokojnym, uważnym i opartym na zaufaniu.
+              Doświadczenia zawodowe i życiowe doprowadziły mnie do miejsca, w którym psychoterapia stała się świadomym wyborem i naturalnym rozwinięciem mojego zainteresowania człowiekiem i jego emocjami.
             </p>
             <p className="home__about-description">
               Jeśli czujesz, że to może być dobre miejsce na rozmowę — zapraszam Cię, by zajrzeć dalej.
