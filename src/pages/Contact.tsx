@@ -1,5 +1,7 @@
 import "../styles/contact.scss";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import buildingImage from "../assets/images/building.webp";
+import entranceImage from "../assets/images/entrance_photo.webp";
 
 function Contact() {
   return (
@@ -18,7 +20,7 @@ function Contact() {
                 517-383-811
               </a>
               <p className="contact__card-description">
-                Zadzwoń, aby umówić wizytę lub uzyskać więcej informacji
+                Jeśli chcesz się umówić na wizytę możesz zadzwonić na poniższy numer. Jeśli pojawia się trudność w nawiązaniu kontaktu proszę o sms – oddzwonię gdy będzie to możliwe.
               </p>
             </div>
 
@@ -28,10 +30,10 @@ function Contact() {
               </div>
               <h3 className="contact__card-title">Email</h3>
               <a
-                href="mailto:magdamil123@gmail.com"
+                href="mailto:psychoterapiakoscierzyna@gmail.com"
                 className="contact__card-link"
               >
-                magdamil123@gmail.com
+                psychoterapiakoscierzyna@gmail.com
               </a>
               <p className="contact__card-description">
                 Napisz wiadomość, odpowiem najszybciej jak to możliwe
@@ -61,18 +63,21 @@ function Contact() {
 
           <div className="contact__location">
             <h2 className="contact__location-title">Jak dotrzeć?</h2>
-            <div className="contact__location-image">
-              <div className="contact__location-placeholder">
-                <FaMapMarkerAlt />
-                <p>Zdjęcie wejścia</p>
+            <div className="contact__location-images">
+              <div className="contact__location-image">
+                <img
+                  src={entranceImage}
+                  alt="Wejście do gabinetu - Mickiewicza 18A m3, Kościerzyna"
+                  className="contact__image"
+                />
               </div>
-              {/* Uncomment when image is available:
-              <img
-                src={entranceImage}
-                alt="Wejście do gabinetu - Mickiewicza 18A m3, Kościerzyna"
-                className="contact__image"
-              />
-              */}
+              <div className="contact__location-image">
+                <img
+                  src={buildingImage}
+                  alt="Budynek - Mickiewicza 18A m3, Kościerzyna"
+                  className="contact__image"
+                />
+              </div>
             </div>
             <div className="contact__location-info">
               <p>

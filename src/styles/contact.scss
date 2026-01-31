@@ -1,7 +1,9 @@
+@use './mixins' as *;
+
 .contact {
   min-height: calc(100vh - 110px);
   padding: 1rem 2rem 2.5rem;
-  background-color: var(--background-light);
+  @include bg-akwarela();
 
   &__container {
     max-width: 1200px;
@@ -127,31 +129,25 @@
     text-align: center;
   }
 
-  &__location-image {
+  &__location-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
     margin-bottom: 2rem;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__location-image {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 15px var(--shadow);
-  }
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  &__location-placeholder {
-    background: linear-gradient(
-      135deg,
-      var(--primary-navy-pale) 0%,
-      var(--white) 100%
-    );
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-navy);
-    font-size: 3rem;
-    gap: 1rem;
-
-    p {
-      font-size: 1.2rem;
-      font-weight: 500;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px var(--shadow);
     }
   }
 
@@ -203,8 +199,9 @@
       gap: 2.5rem;
     }
 
-    &__location-placeholder {
-      height: 300px;
+    &__location-images {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
     }
   }
 
@@ -255,13 +252,8 @@
       font-size: 1.3rem;
     }
 
-    &__location-placeholder {
-      height: 250px;
-      font-size: 2rem;
-
-      p {
-        font-size: 1rem;
-      }
+    &__location-images {
+      gap: 1rem;
     }
 
     &__location-info {

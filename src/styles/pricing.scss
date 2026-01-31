@@ -1,7 +1,9 @@
+@use './mixins' as *;
+
 .pricing {
   min-height: calc(100vh - 110px);
   padding: 1rem 2rem 2.5rem;
-  background-color: var(--background-light);
+  @include bg-akwarela();
 
   &__container {
     max-width: 1200px;
@@ -39,20 +41,20 @@
   }
 
   &__card {
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 4px 15px var(--shadow);
+    box-shadow: 0 2px 8px rgba(44, 95, 125, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid transparent;
+    border: 1px solid rgba(44, 95, 125, 0.1);
 
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px var(--shadow);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(44, 95, 125, 0.12);
     }
 
     &--featured {
-      border-color: var(--primary-navy);
+      border-color: rgba(44, 95, 125, 0.3);
       position: relative;
 
       &::before {
@@ -63,9 +65,9 @@
         transform: translateX(-50%);
         background-color: var(--primary-navy);
         color: var(--white);
-        padding: 0.3rem 1rem;
-        border-radius: 20px;
-        font-size: 0.85rem;
+        padding: 0.25rem 0.8rem;
+        border-radius: 12px;
+        font-size: 0.75rem;
         font-weight: 600;
       }
     }
@@ -73,8 +75,8 @@
     &--custom {
       background: linear-gradient(
         135deg,
-        var(--primary-navy-pale) 0%,
-        var(--white) 100%
+        rgba(232, 241, 245, 0.5) 0%,
+        rgba(255, 255, 255, 0.95) 100%
       );
     }
   }
@@ -83,11 +85,11 @@
     text-align: center;
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--primary-navy-pale);
+    border-bottom: 1px solid rgba(44, 95, 125, 0.15);
   }
 
   &__card-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--primary-navy);
     font-family: "Playfair Display", "Georgia", serif;
@@ -102,7 +104,7 @@
   }
 
   &__card-amount {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: var(--primary-navy);
     line-height: 1;
@@ -125,15 +127,15 @@
   }
 
   &__info {
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 4px 15px var(--shadow);
-    border-left: 4px solid var(--primary-navy);
+    box-shadow: 0 2px 8px rgba(44, 95, 125, 0.08);
+    border-left: 3px solid var(--primary-navy);
   }
 
   &__info-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--primary-navy);
     font-family: "Playfair Display", "Georgia", serif;

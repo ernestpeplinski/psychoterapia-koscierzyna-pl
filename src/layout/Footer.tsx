@@ -1,5 +1,5 @@
 import "../styles/footer.scss";
-import logo from "../assets/Logo MM.png";
+import logo from "../assets/Logo Magdalena Milewczyk.png";
 import partnerLogo from "../assets/images/centrum-pomocy-psychologicznej-koscierzyna-logo.png";
 import {
   FaMapMarkerAlt,
@@ -16,11 +16,7 @@ function Footer() {
           <div className="footer__brand-container">
             <h3>Psychoterapia Kościerzyna</h3>
             <div className="footer__logo">
-              <img src={logo} alt="Logo" />
-            </div>
-            <div className="footer__brand-text">
-              <p>Magdalena Milewczyk</p>
-              <p>Psychoterapia i wsparcie</p>
+              <img src={logo} alt="Magdalena Milewczyk - Psychoterapia i wsparcie" />
             </div>
           </div>
         </div>
@@ -50,7 +46,7 @@ function Footer() {
           </h3>
           <p>
             <FaEnvelope className="footer__icon footer__icon--inline" />
-            <a href="mailto:magdamil123@gmail.com">magdamil123@gmail.com</a>
+            <a href="mailto:psychoterapiakoscierzyna@gmail.com">psychoterapiakoscierzyna@gmail.com</a>
           </p>
           <p>
             <FaPhone className="footer__icon footer__icon--inline" />

@@ -1,7 +1,9 @@
+@use './mixins' as *;
+
 .about {
   min-height: calc(100vh - 110px);
   padding: 1rem 2rem 2.5rem;
-  background-color: var(--white);
+  @include bg-akwarela();
   overflow-x: hidden;
 
   &__container {
@@ -37,9 +39,15 @@
 
   &__content {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 500px 1fr;
     gap: 4rem;
     align-items: start;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   &__image-wrapper {
@@ -54,10 +62,11 @@
     width: 100%;
     height: auto;
     display: block;
+    transform: scale(1.1);
     transition: transform 0.3s ease;
 
     &:hover {
-      transform: scale(1.02);
+      transform: scale(1.12);
     }
   }
 
@@ -65,6 +74,25 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 20px 20px 0;
+      border-color: transparent rgba(255, 255, 255, 0.95) transparent transparent;
+      filter: drop-shadow(-3px 0px 5px rgba(0, 0, 0, 0.1));
+    }
   }
 
   &__subtitle {
@@ -96,11 +124,11 @@
   }
 
   &__credentials {
-    margin-top: 1.5rem;
     padding: 2rem;
-    background-color: var(--primary-navy-pale);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     border-left: 4px solid var(--primary-navy);
+    box-shadow: 0 4px 15px var(--shadow);
 
     h3 {
       font-size: 1.3rem;
