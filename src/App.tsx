@@ -8,6 +8,7 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import CookieConsent from "./components/CookieConsent";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <CookieConsent />
     </BrowserRouter>
   );
 }
