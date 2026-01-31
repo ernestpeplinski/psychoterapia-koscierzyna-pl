@@ -39,44 +39,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Hero Section with Quote */}
-      <section className="home__hero">
-        <div className="home__lead-quote-content">
-          <blockquote className="home__lead-quote-block" aria-label="Cytat">
-            <p>
-              „Możemy nie być odpowiedzialni za świat, który stworzył nasze umysły,
-              <br />
-              ale możemy wziąć odpowiedzialność za umysł, którym tworzymy nasz świat”.
-            </p>
-            <footer>— <cite>Gabor Maté</cite></footer>
-          </blockquote>
-        </div>
-        <div className="home__hero-content">
-          <h1 className="home__hero-title">
-            <span className="home__hero-highlight">Witaj, jestem Magda.</span>
-          </h1>
-          <p className="home__hero-subtitle">
-            Towarzyszę osobom, które chcą lepiej rozumieć swoje myśli, emocje i reakcje w obliczu trudnych doświadczeń.
-          </p>
-
-          <div className="home__hero-buttons">
-            <Link
-              to="/kontakt"
-              className="home__hero-button home__hero-button--primary"
-            >
-              <FaPhone />
-              <span>Umów konsultację</span>
-            </Link>
-            <Link
-              to="/o-mnie"
-              className="home__hero-button home__hero-button--secondary"
-            >
-              Poznaj mnie
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
       <section className="home__services">
         <div className="home__services-container">
