@@ -16,11 +16,7 @@ function Footer() {
           <div className="footer__brand-container">
             <h3>Psychoterapia Kościerzyna</h3>
             <div className="footer__logo">
-              <img src={logo} alt="Logo" />
-            </div>
-            <div className="footer__brand-text">
-              <p>Magdalena Milewczyk</p>
-              <p>Psychoterapia i wsparcie</p>
+              <img src={logo} alt="Magdalena Milewczyk - Psychoterapia i wsparcie" />
             </div>
           </div>
         </div>
