@@ -26,9 +26,15 @@ function Home() {
             <p className="home__about-description">
               Jeśli czujesz, że to może być dobre miejsce na rozmowę — zapraszam Cię, by zajrzeć dalej.
             </p>
-            <Link to="/o-mnie" className="home__about-button">
-              Zajrzyj dalej
-            </Link>
+            <div className="home__about-buttons">
+              <Link to="/o-mnie" className="home__about-button">
+                Zajrzyj dalej
+              </Link>
+              <Link to="/kontakt" className="home__about-button home__about-button--primary">
+                <FaPhone />
+                <span>Umów konsultację</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
