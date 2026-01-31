@@ -1,5 +1,5 @@
 import "../styles/about.scss";
-import profileImage from "../assets/images/magdalena-milewczyk-profile.webp";
+import profileImage from "../assets/images/profile-photo-1.webp";
 
 function About() {
   const startYear = 2012;

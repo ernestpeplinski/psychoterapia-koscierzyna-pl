@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/home.scss";
 import { FaHeart, FaUsers, FaComments, FaPhone } from "react-icons/fa";
-import profileImage from "../assets/images/magdalena-milewczyk-profile.webp";
+import profileImage from "../assets/images/profile-photo-2.webp";
 
 function Home() {
   return (
