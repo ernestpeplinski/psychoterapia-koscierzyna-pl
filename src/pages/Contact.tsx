@@ -28,10 +28,10 @@ function Contact() {
               </div>
               <h3 className="contact__card-title">Email</h3>
               <a
-                href="mailto:magdamil123@gmail.com"
+                href="mailto:psychoterapiakoscierzyna@gmail.com"
                 className="contact__card-link"
               >
-                magdamil123@gmail.com
+                psychoterapiakoscierzyna@gmail.com
               </a>
               <p className="contact__card-description">
                 Napisz wiadomość, odpowiem najszybciej jak to możliwe

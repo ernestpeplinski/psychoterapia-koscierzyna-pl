@@ -50,7 +50,7 @@ function Footer() {
           </h3>
           <p>
             <FaEnvelope className="footer__icon footer__icon--inline" />
-            <a href="mailto:magdamil123@gmail.com">magdamil123@gmail.com</a>
+            <a href="mailto:psychoterapiakoscierzyna@gmail.com">psychoterapiakoscierzyna@gmail.com</a>
           </p>
           <p>
             <FaPhone className="footer__icon footer__icon--inline" />
