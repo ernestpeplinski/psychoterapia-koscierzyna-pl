@@ -47,7 +47,11 @@ function Home() {
       {/* Services Section */}
       <section className="home__services">
         <div className="home__services-container">
-          <h2 className="home__section-title">Czym się zajmuję?</h2>
+          <h2 className="home__section-title">Oferta</h2>
+          <p className="home__services-intro">
+            Pracuję z młodzieżą powyżej 13 r.ż. i z osobami dorosłymi.<br />
+            Sesje odbywają się w gabinecie lub online po wcześniejszych ustaleniach.
+          </p>
           <div className="home__services-grid">
             <div className="home__service-card">
               <div className="home__service-icon">
@@ -55,7 +59,7 @@ function Home() {
               </div>
               <h3 className="home__service-title">Psychoterapia indywidualna</h3>
               <p className="home__service-description">
-                Dla osób dorosłych i młodzieży pow. 13 r.ż. Terapia zaburzeń nastroju, lękowych, obsesyjno – kompulsyjnych i innych problemów.
+                Terapia zaburzeń nastroju, lękowych, obsesyjno – kompulsyjnych i innych.
               </p>
             </div>
 
@@ -65,7 +69,7 @@ function Home() {
               </div>
               <h3 className="home__service-title">Wsparcie psychologiczne</h3>
               <p className="home__service-description">
-                Dla osób w trudnych momentach życia, pracy nad sobą i rozwojem osobistym.
+                Dla osób w trudnych momentach życia, z problemami w relacjach, po stracie bliskich.
               </p>
             </div>
 
