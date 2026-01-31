@@ -1,5 +1,5 @@
 import "../styles/footer.scss";
-import logo from "../assets/Logo MM.png";
+import logo from "../assets/Logo Magdalena Milewczyk.png";
 import partnerLogo from "../assets/images/centrum-pomocy-psychologicznej-koscierzyna-logo.png";
 import {
   FaMapMarkerAlt,
