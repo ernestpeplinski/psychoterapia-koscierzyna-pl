@@ -1,0 +1,22 @@
+// Mixin for watercolor background with optional gradient overlay
+@mixin bg-akwarela($with-gradient: false) {
+  background-image: url('../assets/images/bg_akwarela.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @if $with-gradient {
+    background-image: linear-gradient(180deg, rgba(6, 29, 41, 0.75), rgba(6, 29, 41, 0.55)), 
+                      url('../assets/images/bg_akwarela.webp');
+  }
+}
+
+// Mixin for glassmorphism container on watercolor background
+@mixin glass-container($padding: 3rem 2.5rem) {
+  padding: $padding;
+  background: rgba(6, 29, 41, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

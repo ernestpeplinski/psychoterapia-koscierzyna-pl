@@ -1,12 +1,11 @@
+@import './mixins';
+
 .home {
   min-height: calc(100vh - 110px);
 
   // Hero Section
   &__hero {
-    background-image: url('../assets/images/bg_akwarela.webp');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include bg-akwarela();
     color: var(--white);
     padding: 6rem 2rem 7rem;
     text-align: center;
@@ -18,14 +17,9 @@
   }
 
   &__hero-content {
+    @include glass-container();
     max-width: 900px;
     margin: 0 auto;
-    padding: 3rem 2.5rem;
-    background: rgba(6, 29, 41, 0.75);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   &__hero-title {
@@ -56,10 +50,7 @@
 
   &__lead-quote {
     padding: 4rem 1.5rem;
-    background-image: linear-gradient(180deg, rgba(6, 29, 41, 0.75), rgba(6, 29, 41, 0.55)), url('../assets/images/bg_akwarela.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include bg-akwarela($with-gradient: true);
     color: #fff;
     text-align: center;
   }
@@ -373,10 +364,7 @@
   // CTA Section
   &__cta {
     padding: 6rem 2rem;
-    background-image: url('../assets/images/bg_akwarela.webp');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include bg-akwarela();
     color: var(--white);
     text-align: center;
     position: relative;
@@ -384,14 +372,9 @@
   }
 
   &__cta-container {
+    @include glass-container();
     max-width: 800px;
     margin: 0 auto;
-    padding: 3rem 2.5rem;
-    background: rgba(6, 29, 41, 0.75);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   &__cta-title {
