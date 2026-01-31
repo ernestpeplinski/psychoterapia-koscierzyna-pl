@@ -1,7 +1,9 @@
+@import './mixins';
+
 .contact {
   min-height: calc(100vh - 110px);
   padding: 1rem 2rem 2.5rem;
-  background-color: var(--background-light);
+  @include bg-akwarela();
 
   &__container {
     max-width: 1200px;
