@@ -16,15 +16,21 @@ function Home() {
             />
           </div>
           <div className="home__about-content">
-            <h3 className="home__about-subtitle">Witaj, jestem Magda.</h3>
+            <h3 className="home__about-subtitle">O mnie</h3>
             <p className="home__about-description">
-              Jestem pedagogiem i certyfikowanym psychoterapeutą poznawczo – behawioralnym. Towarzyszę osobom, które czują się przeciążone, zagubione lub stoją w ważnym momencie zmiany. Wierzę, że kiedy tworzymy bezpieczną przestrzeń do rozmowy i refleksji, łatwiej odzyskać poczucie wpływu, równowagi i lepszego kontaktu ze sobą.
+              Nazywam się Magda Milewczyk. Jestem pedagogiem oraz psychoterapeutą.
             </p>
             <p className="home__about-description">
-              Doświadczenia zawodowe i życiowe doprowadziły mnie do miejsca, w którym psychoterapia stała się świadomym wyborem i naturalnym rozwinięciem mojego zainteresowania człowiekiem i jego emocjami.
+              Decyzja o{'\u00A0'}rozpoczęciu psychoterapii bywa trudna i{'\u00A0'}często wiąże się z{'\u00A0'}wieloma wątpliwościami. Jeśli znajdujesz się w{'\u00A0'}tym miejscu, być może poszukujesz wsparcia, zrozumienia lub zmiany w{'\u00A0'}swoim funkcjonowaniu. Moją rolą jest towarzyszenie Ci w{'\u00A0'}tym procesie.
             </p>
             <p className="home__about-description">
-              Jeśli czujesz, że to może być dobre miejsce na rozmowę — zapraszam Cię, by zajrzeć dalej.
+              Pracuję w{'\u00A0'}nurcie psychoterapii poznawczo-behawioralnej, wykorzystując metody oparte na{'\u00A0'}aktualnej wiedzy naukowej oraz sprawdzonych standardach terapeutycznych. W{'\u00A0'}terapii ważne dla mnie jest koncentrowanie się na{'\u00A0'}indywidualnym doświadczeniu pacjenta. Staram się zapewniać bezpieczną, życzliwą przestrzeń opartą na{'\u00A0'}szacunku, uważnym słuchaniu i{'\u00A0'}braku oceniania.
+            </p>
+            <p className="home__about-description">
+              Wszystko, czym będziesz chciał się ze{'\u00A0'}mną podzielić, pozostaje objęte poufnością i{'\u00A0'}traktowane z{'\u00A0'}najwyższą uważnością oraz szacunkiem.
+            </p>
+            <p className="home__about-description">
+              Jeśli myślisz, że może to być dobre miejsce na{'\u00A0'}rozmowę – zapraszam.
             </p>
             <div className="home__about-buttons">
               <Link to="/o-mnie" className="home__about-button">
