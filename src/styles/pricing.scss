@@ -53,25 +53,6 @@
       box-shadow: 0 4px 12px rgba(44, 95, 125, 0.12);
     }
 
-    &--featured {
-      border-color: rgba(44, 95, 125, 0.3);
-      position: relative;
-
-      &::before {
-        content: "Polecane";
-        position: absolute;
-        top: -12px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: var(--primary-navy);
-        color: var(--white);
-        padding: 0.25rem 0.8rem;
-        border-radius: 12px;
-        font-size: 0.75rem;
-        font-weight: 600;
-      }
-    }
-
     &--custom {
       background: linear-gradient(
         135deg,
