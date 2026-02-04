@@ -20,7 +20,7 @@ function Contact() {
                 517-383-811
               </a>
               <p className="contact__card-description">
-                Jeśli chcesz się umówić na wizytę możesz zadzwonić na poniższy numer. Jeśli pojawia się trudność w nawiązaniu kontaktu proszę o sms – oddzwonię gdy będzie to możliwe.
+                Jeśli chcesz się umówić na wizytę możesz zadzwonić na powyższy numer. Jeśli pojawia się trudność w nawiązaniu kontaktu proszę o sms – oddzwonię gdy będzie to możliwe.
               </p>
             </div>
 
@@ -55,9 +55,7 @@ function Contact() {
                 <br />
                 Kościerzyna
               </a>
-              <p className="contact__card-description">
-                Gabinet znajduje się w centrum Kościerzyny
-              </p>
+   
             </div>
           </div>
 
@@ -84,10 +82,6 @@ function Contact() {
                 <strong>Gabinet znajduje się w centrum Kościerzyny</strong> przy ulicy
                 Mickiewicza 18A m3. Dogodny dojazd komunikacją miejską oraz możliwość
                 parkowania w pobliżu.
-              </p>
-              <p>
-                W razie pytań dotyczących dojazdu, zapraszam do{" "}
-                <a href="tel:+48517383811">kontaktu telefonicznego</a>.
               </p>
             </div>
           </div>

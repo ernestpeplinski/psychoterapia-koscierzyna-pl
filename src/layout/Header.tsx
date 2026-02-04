@@ -24,6 +24,12 @@ function Header() {
           O mnie
         </NavLink>
         <NavLink
+          to="/oferta"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Oferta
+        </NavLink>
+        <NavLink
           to="/cennik"
           className={({ isActive }) => (isActive ? "active" : "")}
         >

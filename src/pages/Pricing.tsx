@@ -8,11 +8,11 @@ function Pricing() {
         <h1 className="pricing__title">Cennik</h1>
 
         <div className="pricing__cards">
-          <div className="pricing__card pricing__card--featured">
+          <div className="pricing__card">
             <div className="pricing__card-header">
               <h2 className="pricing__card-title">Pierwsza konsultacja</h2>
               <div className="pricing__card-price">
-                <span className="pricing__card-amount">230 zł</span>
+                <span className="pricing__card-amount">250 zł</span>
                 <span className="pricing__card-duration">70 min</span>
               </div>
             </div>

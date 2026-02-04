@@ -4,6 +4,7 @@ import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Offer from "./pages/Offer";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/o-mnie" element={<About />} />
+        <Route path="/oferta" element={<Offer />} />
         <Route path="/cennik" element={<Pricing />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
