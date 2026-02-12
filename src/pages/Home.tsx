@@ -16,7 +16,6 @@ function Home() {
             />
           </div>
           <div className="home__about-content">
-            <h3 className="home__about-subtitle">O mnie</h3>
             <p className="home__about-description">
               Nazywam się Magda Milewczyk. Jestem pedagogiem oraz psychoterapeutą.
             </p>
